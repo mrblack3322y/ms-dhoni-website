@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --gold: #D4AF66;
+  --csk-yellow: #FDB913;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #050505;
+  color: #ffffff;
+  scroll-behavior: auto;
+  overflow-x: clip;
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: clip;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF66;
+}
+
+/* Film Grain Overlay */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Cinematic text effects */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFF0D0 0%, #D4AF66 50%, #8A6E30 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.csk-text-gradient {
+  background: linear-gradient(135deg, #FFF176 0%, #FDB913 60%, #E67E22 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-gold {
+  text-shadow: 0 0 20px rgba(212, 175, 102, 0.4);
+}
+
+.glow-yellow {
+  text-shadow: 0 0 25px rgba(253, 185, 19, 0.6);
+}
+
+/* Smooth transitions */
+.transition-cinematic {
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Selection */
+::selection {
+  background: #D4AF66;
+  color: #050505;
+}
+
+/* Lenis CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
