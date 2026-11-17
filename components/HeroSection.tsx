@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Play, Sparkles, Film, Zap, ArrowDown } from 'lucide-react';
+import { Play, Sparkles, Film, Zap, ArrowDown, Flame, Heart } from 'lucide-react';
 import { soundManager } from '@/lib/audio';
 import { SplitTextReveal } from '@/components/CinematicTransition';
 
@@ -130,6 +130,10 @@ export default function HeroSection() {
           <span className="px-2.5 py-0.5 rounded-full border border-gold/40 bg-gold/10 text-gold text-[9px] font-mono tracking-widest uppercase">
             2005 LONG HAIR ERA
           </span>
+          <span className="px-3 py-1 rounded-full border border-csk-yellow/60 bg-csk-yellow/20 text-csk-yellow text-[9px] font-mono tracking-widest uppercase flex items-center gap-1.5 shadow-[0_0_20px_rgba(253,185,19,0.35)] animate-pulse">
+            <Flame className="w-3 h-3 text-csk-yellow" />
+            IPL RETIREMENT • TODAY
+          </span>
         </motion.div>
 
         {/* Massive Headline */}
@@ -146,12 +150,35 @@ export default function HeroSection() {
           </motion.h1>
         </div>
 
+        {/* IPL Retirement Breaking Tribute Banner */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.55 }}
+          className="my-3 p-3.5 sm:p-4 rounded-2xl border border-csk-yellow/40 bg-gradient-to-r from-csk-yellow/15 via-black/80 to-transparent backdrop-blur-md max-w-xl flex items-center space-x-3.5 shadow-[0_0_30px_rgba(253,185,19,0.15)]"
+        >
+          <div className="w-10 h-10 rounded-full border border-csk-yellow/60 bg-csk-yellow/20 flex items-center justify-center shrink-0 animate-pulse">
+            <span className="font-display font-black text-sm text-csk-yellow">7</span>
+          </div>
+          <div className="flex flex-col">
+            <div className="flex items-center space-x-2">
+              <span className="w-2 h-2 rounded-full bg-csk-yellow animate-ping" />
+              <span className="font-mono text-[10px] uppercase tracking-widest text-csk-yellow font-bold">
+                BREAKING • RETIRED FROM IPL TODAY
+              </span>
+            </div>
+            <p className="font-editorial italic text-xs sm:text-sm text-white/90 tracking-wide mt-0.5">
+              &ldquo;No. 7 hangs up the yellow jersey.&rdquo; 5 IPL Trophies, 264 matches, 16 years of Chepauk magic. Thank You, Thala.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Animated Gold Separator Line */}
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1.2, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="h-[2px] bg-gradient-to-r from-gold via-csk-yellow to-transparent w-48 md:w-80 my-6 origin-left"
+          className="h-[2px] bg-gradient-to-r from-gold via-csk-yellow to-transparent w-48 md:w-80 my-4 origin-left"
         />
 
         {/* Sub-headline: The Man. The Captain. The Legend. */}

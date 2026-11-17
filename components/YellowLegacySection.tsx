@@ -9,6 +9,11 @@ import { TiltCard, SplitTextReveal, AnamorphicDivider } from '@/components/Cinem
 
 const CSK_ACHIEVEMENTS = [
   {
+    title: 'THE FINAL BOW — RETIRED TODAY',
+    years: '2008 — 2026 • THE IMMORTAL THALA',
+    description: 'Today, MS Dhoni officially bids farewell to the IPL and the iconic yellow No. 7 jersey. 5 IPL trophies, 2 Champions League crowns, 264 games, and an unconditional bond of Yellove with millions worldwide.',
+  },
+  {
     title: '5X IPL CHAMPIONS',
     years: '2010 • 2011 • 2018 • 2021 • 2023',
     description: 'Joint most successful franchise in IPL history. Led to 10 finals in 14 seasons played — an unprecedented 71% finals conversion rate.',
@@ -17,11 +22,6 @@ const CSK_ACHIEVEMENTS = [
     title: '2X CHAMPIONS LEAGUE T20',
     years: '2010 (SOUTH AFRICA) • 2014 (INDIA)',
     description: 'Conquered the globe twice in international franchise competition, defeating top T20 teams from Australia, South Africa, and England.',
-  },
-  {
-    title: '250+ IPL MATCHES',
-    years: '2008 — PRESENT • UNDISPUTED THALA',
-    description: 'Most matches as captain in T20 history (226 as CSK skipper). 5,000+ IPL runs batting predominantly at No. 5, 6, and 7.',
   },
   {
     title: 'THE 2018 FAIRYTALE COMEBACK',
@@ -87,9 +87,16 @@ export default function YellowLegacySection() {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-20">
-          <div className="inline-flex items-center space-x-2 text-csk-yellow font-mono text-xs uppercase tracking-[0.35em] bg-csk-yellow/10 border border-csk-yellow/30 px-4 py-1.5 rounded-full">
-            <Flame className="w-3.5 h-3.5 text-csk-yellow" />
-            <span>CHENNAI SUPER KINGS DYNASTY</span>
+          <div className="flex flex-wrap items-center justify-center gap-2.5">
+            <div className="inline-flex items-center space-x-2 text-csk-yellow font-mono text-xs uppercase tracking-[0.35em] bg-csk-yellow/10 border border-csk-yellow/30 px-4 py-1.5 rounded-full">
+              <Flame className="w-3.5 h-3.5 text-csk-yellow" />
+              <span>CHENNAI SUPER KINGS DYNASTY</span>
+            </div>
+            <div className="inline-flex items-center space-x-2 text-white font-mono text-xs uppercase tracking-[0.2em] bg-csk-yellow/20 border border-csk-yellow/60 px-4 py-1.5 rounded-full shadow-[0_0_20px_rgba(253,185,19,0.35)] animate-pulse">
+              <span className="w-2 h-2 rounded-full bg-csk-yellow" />
+              <span className="text-csk-yellow font-bold">RETIRED FROM IPL TODAY</span>
+              <span>💛</span>
+            </div>
           </div>
 
           <div className="flex flex-col items-center">

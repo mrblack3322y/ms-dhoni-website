@@ -58,8 +58,8 @@ export default function Footer() {
                 #07
               </span>
             </div>
-            <p className="font-editorial italic text-xs text-white/50 tracking-wide text-center md:text-left">
-              A tribute to Mahendra Singh Dhoni — Captain, Leader, Legend.
+            <p className="font-editorial italic text-xs text-white/60 tracking-wide text-center md:text-left">
+              A tribute to Mahendra Singh Dhoni — Captain, Leader, Legend. Bidding farewell to the IPL today.
             </p>
           </div>
 

@@ -88,6 +88,16 @@ const MILESTONES: Milestone[] = [
     stats: '15,000+ RUNS • 829 DISMISSALS • 332 MATCHES AS CAPTAIN',
     quote: '"Thanks a lot for ur love and support throughout. from 1929 hrs consider me as Retired."',
   },
+  {
+    year: 'TODAY',
+    title: 'RETIRED FROM IPL',
+    subtitle: 'THE FINAL BOW IN YELLOW • FAREWELL THALA',
+    description:
+      'Today, the greatest story in franchise cricket reaches its emotional zenith. MS Dhoni officially announces his retirement from the Indian Premier League. 5 IPL trophies, 2 Champions League titles, 264 matches, and millions of memories at Chepauk. The roar will echo for generations.',
+    image: '/assets/images/csk_dhoni_portrait.jpg',
+    stats: '5X IPL CHAMPION • 264 MATCHES • 5,243 RUNS • 190 DISMISSALS',
+    quote: '"Definitely not... until today. Thanks for the Yellove Chennai. No. 7 signs off from the IPL."',
+  },
 ];
 
 export default function JourneySection() {
@@ -180,8 +190,8 @@ export default function JourneySection() {
       id="journey"
       className="relative bg-gradient-to-b from-[#050505] via-[#0a0a0a] to-[#050505] text-white select-none border-t border-white/5"
     >
-      {/* Calibrated 340vh container allows comfortable scrolling through all 7 events, then immediately frees the page to #captain */}
-      <div ref={targetRef} className="relative h-[340vh]">
+      {/* Calibrated 390vh container allows comfortable scrolling through all 8 events (including today's retirement), then immediately frees the page to #captain */}
+      <div ref={targetRef} className="relative h-[390vh]">
         <div className="sticky top-0 h-screen flex flex-col justify-between overflow-hidden px-6 md:px-14 py-8 z-20">
           
           {/* Top Header */}

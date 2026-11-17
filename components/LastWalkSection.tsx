@@ -90,6 +90,14 @@ export default function LastWalkSection() {
             <span className="gold-text-gradient">FOREVER.</span>
           </h2>
 
+          {/* Retirement from IPL Tribute Badge */}
+          <div className="flex flex-wrap items-center justify-center gap-2.5 px-6 py-2.5 rounded-full border border-csk-yellow/50 bg-gradient-to-r from-csk-yellow/20 via-black/80 to-csk-yellow/20 text-csk-yellow font-mono text-xs tracking-widest uppercase shadow-[0_0_30px_rgba(253,185,19,0.35)] animate-pulse">
+            <span className="w-2 h-2 rounded-full bg-csk-yellow" />
+            <span>THE FINAL BOW • RETIRED FROM IPL TODAY</span>
+            <span className="text-white/40">•</span>
+            <span>5X CHAMPION • 264 MATCHES • CHEPAUK HERO 💛</span>
+          </div>
+
           {/* Animated Flowing Ink Signature of MS Dhoni */}
           <div className="w-full pt-4">
             <AnimatedSignature />

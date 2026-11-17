@@ -114,7 +114,14 @@ export default function Navbar({ onOpenAudioSettings }: NavbarProps) {
           </nav>
 
           {/* Right Controls: Sound Pill + Mobile Hamburger */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3 md:space-x-4">
+            {/* IPL Retirement Live Banner */}
+            <div className="hidden xl:flex items-center space-x-2 px-3 py-1 rounded-full border border-csk-yellow/50 bg-csk-yellow/15 text-csk-yellow font-mono text-[9.5px] tracking-widest uppercase shadow-[0_0_15px_rgba(253,185,19,0.25)] animate-pulse">
+              <span className="w-1.5 h-1.5 rounded-full bg-csk-yellow" />
+              <span>RETIRED FROM IPL TODAY</span>
+              <span className="text-[11px]">💛</span>
+            </div>
+
             {/* Audio Toggle Pill */}
             <button
               onClick={toggleSound}
